@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".OrganizationInfo">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="15dp">
+
+    <ImageView
+        android:id="@+id/OrganizationMapImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/OrganizationName"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextbg"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="50dp"
+        android:hint="Organization Name"
+        android:padding="10dp"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/OrganizationAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextbg"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Organization Address"/>
+
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/addimage"
+        android:layout_margin="15dp" />
+
+    <Button
+        android:id="@+id/UploadInfo"
+        android:layout_width="240dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        app:cornerRadius="16dp"
+        android:text="Submit" />
+
+
+</LinearLayout>

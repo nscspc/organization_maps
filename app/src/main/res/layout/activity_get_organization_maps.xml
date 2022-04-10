@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".getOrganizationMapsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="15dp">
+
+        <ImageView
+            android:id="@+id/OrganizationMapImagePaths"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/getorgname"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextbg"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:hint="Organization Name"
+        android:padding="10dp"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/getorgid"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextbg"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:hint="Organization ID"
+        android:padding="10dp"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/imagename"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextbg"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:hint="Image Name"
+        android:padding="10dp"
+        android:inputType="textPersonName" />
+
+    <ImageView
+        android:id="@+id/imagemapupload"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/addimage"
+        android:layout_margin="15dp" />
+
+    <Button
+        android:id="@+id/upload_maps"
+        android:layout_width="240dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textSize="19sp"
+        app:cornerRadius="17dp"
+        android:textAllCaps="false"
+        android:text="Upload Map" />
+
+</LinearLayout>

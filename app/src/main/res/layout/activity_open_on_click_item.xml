@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".open_on_click_item">
+
+<!--    <Toolbar-->
+<!--        android:id="@+id/openToolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        tools:targetApi="lollipop"-->
+<!--        android:background="@color/purple_500"/>-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textOid"-->
+<!--        android:layout_width="220dp"-->
+<!--        android:layout_height="44dp"-->
+<!--        -->
+<!--        android:layout_margin="10dp"-->
+<!--        android:text="TextView" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textOname"-->
+<!--        android:layout_width="203dp"-->
+<!--        android:layout_height="39dp"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:text="TextView" />-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="250dp"
+        app:cardCornerRadius="10dp">
+
+    <ImageView
+        android:id="@+id/newimageset"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_places"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"/>
+
+
+</LinearLayout>
